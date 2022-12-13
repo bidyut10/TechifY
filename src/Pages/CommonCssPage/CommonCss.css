@@ -11,9 +11,11 @@
   padding: 15px 0;
   border-radius: 30px;
 }
+
 h1 {
   font-family: "Poppins", sans-serif;
 }
+
 .common-box h1 {
   margin-left: 45px;
   margin-bottom: 10px;
@@ -22,6 +24,7 @@ h1 {
   font-size: 28px;
   border-radius: 6px;
 }
+
 .common-box {
   display: block;
   margin-top: 50px;
@@ -29,6 +32,7 @@ h1 {
   margin-right: auto;
   width: 40%;
 }
+
 form {
   width: 100%;
   margin: 15px 45px;
@@ -46,6 +50,7 @@ div.form-example {
   display: table-row;
   width: 100%;
 }
+
 label {
   color: white;
 }

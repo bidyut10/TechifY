@@ -26,7 +26,7 @@ const Update = () => {
 
   const getDetails = async () => {
     let res = await axios
-      .get(`http://localhost:3001/update/${id}`)
+      .get(`https://techify-backend-api.onrender.com/update/${id}`)
       .catch(() => alert("Oops!!Somthing Wrong"));
     const data = res.data;
     return data;
@@ -34,7 +34,7 @@ const Update = () => {
 
   const UpdateReq = async () => {
     const res = await axios
-      .put(`http://localhost:3001/update/${id}`, {
+      .put(`https://techify-backend-api.onrender.com/update/${id}`, {
         title: inputs.title,
         subtitle: inputs.subtitle,
         summary: inputs.summary,

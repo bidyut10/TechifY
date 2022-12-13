@@ -20,7 +20,7 @@ const Register = () => {
 
   const sendReq = async () => {
     const res = await axios
-      .post("http://localhost:3001/register", {
+      .post("https://techify-backend-api.onrender.com/register", {
         name: inputs.name,
         phone: inputs.phone,
         password: inputs.password,
@@ -46,7 +46,6 @@ const Register = () => {
   return (
     <div className="main-from">
       <div id="common-id" className="common-box">
-        <h1>Register Your Details</h1>
 
         <form
           onSubmit={handleSubmit}
@@ -54,8 +53,10 @@ const Register = () => {
           method="POST"
           className="form-example"
         >
-          <div className="form-example">
-            <label htmlFor="name">Enter Your Name</label>
+          <h1>Register Your Details</h1>
+
+          <div className="form-example -inside">
+            <label htmlFor="name">Enter Your Name</label> <br />
             <input
               onChange={handleChange}
               type={"name"}
@@ -67,8 +68,8 @@ const Register = () => {
               maxLength={25}
             />
           </div>
-          <div className="form-example">
-            <label htmlFor="name">Enter Your Phone No</label>
+          <div className="form-example -inside">
+            <label htmlFor="name">Enter Your Phone No</label> <br />
             <input
               onChange={handleChange}
               type={"phone"}
@@ -79,8 +80,8 @@ const Register = () => {
               maxLength={10}
             />
           </div>
-          <div className="form-example">
-            <label htmlFor="email">Enter Your Email</label>
+          <div className="form-example -inside">
+            <label htmlFor="email">Enter Your Email</label> <br />
             <input
               onChange={handleChange}
               type={"email"}
@@ -90,8 +91,8 @@ const Register = () => {
               required
             />
           </div>
-          <div className="form-example">
-            <label htmlFor="name">Enter Your Password</label>
+          <div className="form-example -inside">
+            <label htmlFor="name">Enter Your Password</label> <br />
             <input
               onChange={handleChange}
               type={"password"}

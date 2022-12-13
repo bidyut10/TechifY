@@ -21,7 +21,7 @@ const Create = () => {
 
   const sendReq = async () => {
     const res = await axios
-      .post("http://localhost:3001/create", {
+      .post("https://techify-backend-api.onrender.com/create", {
         authorId: id,
         title: inputs.title,
         subtitle: inputs.subtitle,

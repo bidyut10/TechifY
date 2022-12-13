@@ -7,7 +7,7 @@ const Block = ({ id, title,subtitle, description, summary, Update, Delete }) => 
   const navigate = useNavigate();
   const deleteBlog = async () => {
     await axios
-      .delete(`http://localhost:3001/delete/${id}`)
+      .delete(`https://techify-backend-api.onrender.com/delete/${id}`)
       .then(() => navigate("/home"))
       .catch((err) => console.log(err));
   };

@@ -18,7 +18,7 @@ const LogIn = () => {
 
   const sendReq = async () => {
     const res = await axios
-      .post("http://localhost:3001/login", {
+      .post("https://techify-backend-api.onrender.com/login", {
         password: inputs.password,
         email: inputs.email,
       })

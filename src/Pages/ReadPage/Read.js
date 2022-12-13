@@ -8,7 +8,7 @@ const Read = () => {
   const id = localStorage.getItem("userId");
   const sendReq = async () => {
     const res = await axios
-      .get(`http://localhost:3001/blogs/${id}`)
+      .get(`https://techify-backend-api.onrender.com/blogs/${id}`)
       .catch((err) => console.log(err));
 
     const data = await res.data;
