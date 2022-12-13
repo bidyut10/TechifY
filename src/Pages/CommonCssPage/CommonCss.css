@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Sono:wght@300;400&display=swap");
+
+#common-id {
+  background: #6441a5;
+  background: -webkit-linear-gradient(to right, #2a0845, #7754b8);
+  background: linear-gradient(to right, #2a0845, #714eb2);
+  width: 450px;
+  height: 550px;
+  background-position: center;
+  background-size: cover;
+  padding: 15px 0;
+  border-radius: 30px;
+}
+h1 {
+  font-family: "Poppins", sans-serif;
+}
+.common-box h1 {
+  margin-left: 45px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  color: rgb(255, 255, 255);
+  font-size: 28px;
+  border-radius: 6px;
+}
+.common-box {
+  display: block;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+form {
+  margin: 15px 45px;
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  border-radius: 6px;
+}
+
+form.form-example {
+  display: inline-block;
+}
+
+div.form-example {
+  display: table-row;
+}
+label {
+  color: white;
+}
+
+input {
+  width: 100%;
+  margin: 8px 0;
+  box-sizing: border-box;
+  padding: 12px 20px;
+  border-radius: 8px;
+}
+
+@media only screen and (max-width: 600px) {
+  .main-from {
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    justify-content: center;
+    padding: 10px 5px;
+    width: auto;
+  }
+}
