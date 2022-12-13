@@ -30,6 +30,7 @@ h1 {
   width: 40%;
 }
 form {
+  width: 100%;
   margin: 15px 45px;
   color: rgb(0, 0, 0);
   font-size: 15px;
@@ -38,10 +39,12 @@ form {
 
 form.form-example {
   display: inline-block;
+  width: 100%;
 }
 
 div.form-example {
   display: table-row;
+  width: 100%;
 }
 label {
   color: white;
