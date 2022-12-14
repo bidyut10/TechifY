@@ -5,7 +5,7 @@
   background: -webkit-linear-gradient(to right, #2a0845, #7754b8);
   background: linear-gradient(to right, #2a0845, #714eb2);
   width: 450px;
-  height: 550px;
+  height: 600px;
   background-position: center;
   background-size: cover;
   padding: 15px 0;
@@ -39,6 +39,8 @@ form {
   color: rgb(0, 0, 0);
   font-size: 15px;
   border-radius: 6px;
+  /* justify-content: center; */
+  align-items: center;
 }
 
 form.form-example {
@@ -57,7 +59,7 @@ label {
 
 input {
   width: 100%;
-  height: 55px;
+  height: 65px;
   margin: 8px 0;
   box-sizing: border-box;
   padding: 12px 20px;
@@ -73,4 +75,5 @@ input {
     padding: 10px 5px;
     width: auto;
   }
-}
+} 
+

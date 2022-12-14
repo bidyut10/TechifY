@@ -20,7 +20,7 @@ const Register = () => {
 
   const sendReq = async () => {
     const res = await axios
-      .post("https://techify-backend-api.onrender.com/register", {
+      .post("http://localhost:3001/register", {
         name: inputs.name,
         phone: inputs.phone,
         password: inputs.password,
@@ -39,13 +39,14 @@ const Register = () => {
     // console.log(inputs);
     sendReq()
       .then(() => alert("Registration Successful"))
-      .then(() => { navigate("/login")})
+      .then(() => { navigate("/login") })
       .catch(() => alert("Check Your Details"));
   };
 
   return (
     <div className="main-from">
       <div id="common-id" className="common-box">
+        <h1>Register Your Details</h1>
 
         <form
           onSubmit={handleSubmit}
@@ -53,10 +54,8 @@ const Register = () => {
           method="POST"
           className="form-example"
         >
-          <h1>Register Your Details</h1>
-
-          <div className="form-example -inside">
-            <label htmlFor="name">Enter Your Name</label> <br />
+          <div className="form-example">
+            <label htmlFor="name">Enter Your Name</label> 
             <input
               onChange={handleChange}
               type={"name"}
@@ -68,8 +67,8 @@ const Register = () => {
               maxLength={25}
             />
           </div>
-          <div className="form-example -inside">
-            <label htmlFor="name">Enter Your Phone No</label> <br />
+          <div className="form-example">
+            <label htmlFor="name">Enter Your Phone No</label> 
             <input
               onChange={handleChange}
               type={"phone"}
@@ -80,8 +79,8 @@ const Register = () => {
               maxLength={10}
             />
           </div>
-          <div className="form-example -inside">
-            <label htmlFor="email">Enter Your Email</label> <br />
+          <div className="form-example">
+            <label htmlFor="email">Enter Your Email</label> 
             <input
               onChange={handleChange}
               type={"email"}
@@ -91,8 +90,8 @@ const Register = () => {
               required
             />
           </div>
-          <div className="form-example -inside">
-            <label htmlFor="name">Enter Your Password</label> <br />
+          <div className="form-example">
+            <label htmlFor="name">Enter Your Password</label> 
             <input
               onChange={handleChange}
               type={"password"}
