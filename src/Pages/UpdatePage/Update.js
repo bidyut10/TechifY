@@ -62,75 +62,69 @@ const Update = () => {
 
   return (
     <div className="main-from">
-      <div id="common-id" className="common-box">
+      <form onSubmit={handleSubmit} action="/update" method="PUT" className="">
         <h1>Update Your Blog</h1>
 
-        <form
-          onSubmit={handleSubmit}
-          action="/update"
-          method="PUT"
-          className="form-example"
-        >
-          <div className="form-example">
-            <label htmlFor="name">Enter Your Topic Name</label>
-            <input
-              onChange={handleChange}
-              type={"title"}
-              value={inputs.title}
-              name="title"
-              id="name"
-              required
-              minLength={2}
-              maxLength={50}
-            />
-          </div>
-          <div className="form-example">
-            <label htmlFor="name">Enter Your Source Name</label>
-            <input
-              onChange={handleChange}
-              type={"subtitle"}
-              value={inputs.subtitle}
-              name="subtitle"
-              required
-              id="name"
-              minLength={3}
-            />
-          </div>
-          <div className="form-example">
-            <label htmlFor="text-area">Enter Your Question/Summary </label>
-            <input
-              onChange={handleChange}
-              type={"summary"}
-              value={inputs.summary}
-              name="summary"
-              id="email"
-              required
-              minLength={6}
-              maxLength={500}
-            />
-          </div>
-          <div className="form-example">
-            <label htmlFor="name">Enter Your Answer/Description</label>
-            <input
-              onChange={handleChange}
-              type={"description"}
-              value={inputs.description}
-              name="description"
-              id="name"
-              required
-              minLength={100}
-              maxLength={5000}
-            />
-          </div>
-
+        <div className="">
+          <label htmlFor="name">Enter Your Topic Name</label> <br />
+          <input
+            onChange={handleChange}
+            type={"title"}
+            value={inputs.title}
+            name="title"
+            id="name"
+            required
+            minLength={2}
+            maxLength={50}
+          />
+        </div>
+        <div className="">
+          <label htmlFor="name">Enter Your Source Name</label> <br />
+          <input
+            onChange={handleChange}
+            type={"subtitle"}
+            value={inputs.subtitle}
+            name="subtitle"
+            required
+            id="name"
+            minLength={3}
+          />
+        </div>
+        <div className="">
+          <label htmlFor="text-area">Enter Your Question/Summary </label> <br />
+          <input
+            onChange={handleChange}
+            type={"summary"}
+            value={inputs.summary}
+            name="summary"
+            id="email"
+            required
+            minLength={6}
+            maxLength={500}
+          />
+        </div>
+        <div className="">
+          <label htmlFor="name">Enter Your Answer/Description</label> <br />
+          <input
+            onChange={handleChange}
+            type={"description"}
+            value={inputs.description}
+            name="description"
+            id="name"
+            required
+            minLength={100}
+            maxLength={5000}
+          />
+        </div>
+        <div>
           <button
             type="submit"
             className="font-mono ml-0 mt-4 inline-flex text-white bg-purple-800 border-0 py-2 px-6 focus:outline-none hover:bg-purple-600 rounded-3xl text-lg"
           >
             Update
           </button>
-        </form>
-      </div>
+        </div>
+      </form>
     </div>
   );
 };

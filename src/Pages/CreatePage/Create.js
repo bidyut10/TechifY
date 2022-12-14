@@ -48,17 +48,16 @@ const Create = () => {
 
   return (
     <div className="main-from">
-      <div id="common-id" className="common-box">
-        <h1>Crearte Your Blog</h1>
-
         <form
           onSubmit={handleSubmit}
           action="/create"
           method="POST"
-          className="form-example"
+          className=""
         >
-          <div className="form-example">
-            <label htmlFor="name">Enter Your Topic Name </label>
+        <h1>Crearte Your Blog</h1>
+
+          <div className="">
+            <label htmlFor="name">Enter Your Topic Name </label> <br />
             <input
               onChange={handleChange}
               type={"title"}
@@ -70,8 +69,8 @@ const Create = () => {
               maxLength={50}
             />
           </div>
-          <div className="form-example">
-            <label htmlFor="name">Enter Source Name </label>
+          <div className="">
+            <label htmlFor="name">Enter Source Name </label> <br />
             <input
               onChange={handleChange}
               type={"subtitle"}
@@ -82,8 +81,8 @@ const Create = () => {
               minLength={3}
             />
           </div>
-          <div className="form-example">
-            <label htmlFor="text-area">Enter Your Question/Summary </label>
+          <div className="">
+            <label htmlFor="text-area">Enter Your Question/Summary </label> <br />
             <input
               onChange={handleChange}
               type={"summary"}
@@ -95,8 +94,8 @@ const Create = () => {
               maxLength={500}
             />
           </div>
-          <div className="form-example">
-            <label htmlFor="name">Enter Your Answer/Description </label>
+          <div className="">
+            <label htmlFor="name">Enter Your Answer/Description </label> <br />
             <input
               onChange={handleChange}
               type={"description"}
@@ -108,16 +107,17 @@ const Create = () => {
               maxLength={5000}
             />
           </div>
-
+          <div>
           <button
             type="submit"
             className=" font-mono ml-0 mt-4 inline-flex text-white bg-purple-800 border-0 py-2 px-6 focus:outline-none hover:bg-purple-600 rounded-3xl text-lg"
           >
             Crearte
           </button>
+          </div>
+          
         </form>
       </div>
-    </div>
   );
 };
 

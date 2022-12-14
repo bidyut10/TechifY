@@ -45,17 +45,16 @@ const Register = () => {
 
   return (
     <div className="main-from">
-      <div id="common-id" className="common-box">
-        <h1>Register Your Details</h1>
-
         <form
           onSubmit={handleSubmit}
           action="/register"
           method="POST"
-          className="form-example"
+          className=""
         >
-          <div className="form-example">
-            <label htmlFor="name">Enter Your Name</label> 
+          <h1>Register Your Details</h1>
+
+          <div className="">
+            <label htmlFor="name">Enter Your Name</label> <br />
             <input
               onChange={handleChange}
               type={"name"}
@@ -67,8 +66,8 @@ const Register = () => {
               maxLength={25}
             />
           </div>
-          <div className="form-example">
-            <label htmlFor="name">Enter Your Phone No</label> 
+          <div className="">
+            <label htmlFor="name">Enter Your Phone No</label> <br />
             <input
               onChange={handleChange}
               type={"phone"}
@@ -79,8 +78,8 @@ const Register = () => {
               maxLength={10}
             />
           </div>
-          <div className="form-example">
-            <label htmlFor="email">Enter Your Email</label> 
+          <div className="">
+            <label htmlFor="email">Enter Your Email</label> <br />
             <input
               onChange={handleChange}
               type={"email"}
@@ -90,8 +89,8 @@ const Register = () => {
               required
             />
           </div>
-          <div className="form-example">
-            <label htmlFor="name">Enter Your Password</label> 
+          <div className="">
+            <label htmlFor="name">Enter Your Password</label> <br />
             <input
               onChange={handleChange}
               type={"password"}
@@ -103,15 +102,16 @@ const Register = () => {
               maxLength={15}
             />
           </div>
-          <button
-            type="submit"
-            className="font-mono ml-0 mt-4 inline-flex text-white bg-purple-800 border-0 py-2 px-6 focus:outline-none hover:bg-purple-600 rounded-3xl text-lg"
-          >
-            Register
-          </button>
+          <div>
+            <button
+              type="submit"
+              className="font-mono ml-0 mt-4 inline-flex text-white bg-purple-800 border-0 py-2 px-6 focus:outline-none hover:bg-purple-600 rounded-3xl text-lg"
+            >
+              Register
+            </button>
+          </div>
         </form>
       </div>
-    </div>
   );
 };
 

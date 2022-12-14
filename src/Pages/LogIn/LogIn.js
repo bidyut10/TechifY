@@ -44,12 +44,10 @@ const LogIn = () => {
 
   return (
     <div className="main-from">
-      <div id="common-id" className="common-box ">
+        <form onSubmit={handleSubmit} action="/login" className="">
         <h1>LogIn To Your Account</h1>
-
-        <form onSubmit={handleSubmit} action="/login" className="form-example">
-          <div className="form-example">
-            <label htmlFor="email">Enter Your Email </label>
+          <div className="">
+            <label htmlFor="email">Enter Your Email </label> <br />
             <input
               onChange={handleChange}
               type={"email"}
@@ -60,8 +58,8 @@ const LogIn = () => {
               minLength={10}
             />
           </div>
-          <div className="form-example">
-            <label htmlFor="name">Enter Your Password </label>
+          <div className="">
+            <label htmlFor="name">Enter Your Password </label> <br />
             <input
               onChange={handleChange}
               type={"password"}
@@ -72,15 +70,17 @@ const LogIn = () => {
               maxLength={15}
             />
           </div>
+          <div>
           <button
             type="submit"
             className="font-mono ml-0 mt-4 inline-flex text-white bg-purple-800 border-0 py-2 px-6 focus:outline-none hover:bg-purple-600 rounded-3xl text-lg"
           >
             LogIn
           </button>
+          </div>
+          
         </form>
       </div>
-    </div>
   );
 };
 
