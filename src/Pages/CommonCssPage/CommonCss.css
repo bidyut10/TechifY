@@ -14,7 +14,7 @@
   justify-content: center;
   justify-items: center;
 }
-h1{
+.main-from h1{
   color: white;
   font-size: 30px;
   padding-bottom: 15px;
@@ -51,7 +51,7 @@ label {
       justify-items: center;
     }
   
-    h1 {
+        .main-from h1 {
       color: white;
       font-size: 30px;
       padding-top: 10px;
@@ -89,7 +89,7 @@ label {
         justify-items: center;
       }
     
-      h1 {
+             .main-from h1 {
         color: white;
         font-size: 30px;
         padding-top: 10px;
