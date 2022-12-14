@@ -9,6 +9,7 @@ const Block = ({ id, title,subtitle, description, summary, Update, Delete }) => 
     await axios
       .delete(`https://techify-backend-api.onrender.com/delete/${id}`)
       .then(() => navigate("/home"))
+      .the(()=>alert("Successfully Deleted"))
       .catch((err) => console.log(err));
   };
 

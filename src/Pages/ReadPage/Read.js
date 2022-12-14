@@ -19,7 +19,7 @@ const Read = () => {
   useEffect(() => {
     sendReq()
       .then((data) => setblogs(data.blogs))
-      .catch((err) => console.log(err));
+      .catch(() => alert("No blogs Found"));
   },[id]);
   // console.log(blogs)
   return (
