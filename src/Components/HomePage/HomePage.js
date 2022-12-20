@@ -15,10 +15,6 @@ const Home = () => {
     navigate("/read");
   };
 
-  //working on it
-  // const goToProfile = async () => {
-  //   navigate(`/profileInfo`);
-  // };
   const goToAllBlogs = async () => {
     navigate(`/allBlogs`);
   };
@@ -28,7 +24,7 @@ const Home = () => {
       <div className="container-left">
         <div>
           <h1>Welcome to Techi<span>fY</span> </h1>
-          <p>
+          <p className="font-mono">
             "A blog website is a site that is updated with new information on
                an ongoing basis. It normally consists of a collection of posts.
                Posts may be short, informal, controversial, or more professional.

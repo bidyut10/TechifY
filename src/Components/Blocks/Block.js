@@ -27,11 +27,11 @@ const Block = ({
   return (
     <div className="block-container">
       <div className="div-1">
-        <p className="title">{title} </p>
-        <p className="summ">{summary}</p>
+        <p className="title font-mono">{title} </p>
+        <p className="summ font-mono">{summary}</p>
       </div>
 
-      <div className="div-2">
+      <div className="div-2 font-sans">
         <p>
           {description} <br />
           <span className=" title-font mt-15 text-stone-700 text-xl font-mono">
