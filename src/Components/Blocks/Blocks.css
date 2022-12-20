@@ -1,5 +1,6 @@
  .block-container{
-    background-color: rgb(215, 250, 239);
+    background: rgb(186, 150, 255);
+    background: linear-gradient(85deg, rgba(186, 150, 255, 1) 0%, rgba(253, 224, 224, 1) 100%);
     padding: 40px 80px;
     margin: 40px 80px;
     border-radius: 50px;
