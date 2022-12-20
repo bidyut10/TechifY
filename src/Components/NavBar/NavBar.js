@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import "../../App.css";
+import '../NavBar/Navbar.css'
 
 function NavBar() {
   const navigate = useNavigate();
@@ -12,19 +12,13 @@ function NavBar() {
     navigate("/login");
   };
   return (
-    <header className="home-nav text-black-600 body-font bg-purple-900 bg-opacity-50">
-      <div className="container container-nav mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-        <a
-          className="iconBg flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
-          href="home"
-        >
-          <span className="title-nav ml-3 text-3xl text-white font-mono">
-            TechifY
-          </span>
-        </a>
-        <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center text-white">
-          <div className="btn-nav">
-            <button
+    <header>
+    <nav>
+      <div >
+        <h1>Techi<span>fY</span></h1>
+      </div>
+      <div className="btn-div">
+        <button
               onClick={register}
               className="font-mono ml-0 inline-flex text-white bg-rose-500 border-0 py-2 px-6 focus:outline-none hover:bg-rose-600 rounded-3xl text-base"
             >
@@ -36,16 +30,8 @@ function NavBar() {
             >
               Log In
             </button>
-            {/*
-                Working On It
-                <button className="ml-4 font-mono inline-flex text-white bg-stone-800 border-0 py-2 px-6 focus:outline-none hover:bg-stone-900 rounded-3xl text-base">
-                  Contact Me
-                </button> 
-            */}
-            
-          </div>
-        </nav>
       </div>
+    </nav>
     </header>
   );
 }
