@@ -8,7 +8,7 @@ export const W = () => {
         Thank you for your patience and understanding during this transition period."</p>
       </div>
       <div>
-        <a href="https://techiify.netlify.app" className='newlink'> https://techiify.netlify.app </a>
+        <a href="https://techiify.netlify.app" className='newlink' target={"_blank"}> https://techiify.netlify.app </a>
       </div>
       
       
