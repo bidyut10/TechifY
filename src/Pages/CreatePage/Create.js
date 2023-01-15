@@ -110,7 +110,7 @@ const Create = () => {
           <div>
           <button
             type="submit"
-            className=" font-mono ml-0 mt-4 inline-flex text-white bg-purple-800 border-0 py-2 px-6 focus:outline-none hover:bg-purple-600 rounded-3xl text-lg"
+            className=" font-mono ml-0 mt-4 inline-flex text-white bg-purple-800 border-0 py-2 px-6 focus:outline-none hover:bg-purple-600 rounded-3xl text-base"
           >
             Crearte
           </button>

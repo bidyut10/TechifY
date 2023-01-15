@@ -1,0 +1,20 @@
+.text-para{
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 50px;
+    font-weight: 500;
+    
+}
+.newlink{
+    text-align: center;
+    font-size: 20px;
+    background-color: aqua;
+    border-radius: 30px;
+    border: 2px solid black;
+    padding:20px 40px;
+    text-decoration: underline;
+}
+.textbox{
+    text-align: center;
+    margin-top: 150px;
+}
